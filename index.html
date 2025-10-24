@@ -21,6 +21,21 @@
     <button type="button" id="resetBtn">Сбросить выбор</button>
   </form>
 
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+
+  window.openModal = (src) => {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    modalImage.src = src;
+    modal.style.display = "flex";
+  };
+  window.closeModal = () => {
+    document.getElementById("imageModal").style.display = "none";
+  };
+
+
   <h3>Итоговая сумма: <span id="total">0</span> $</h3>
 
   <h3>Вы выбрали:</h3>
