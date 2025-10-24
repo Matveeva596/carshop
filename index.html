@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Выбор автомобилей</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Выбор автомобилей</h1>
+
+  <img src="https://ts4.mm.bing.net/th?id=OIP.y8COhHXdBGBYxD6BOqVmugHaFj&pid=15.1"
+       alt="Логотипы автомобилей" width="400">
 
   <h2>Выберите автомобили:</h2>
 
@@ -20,21 +24,6 @@
     <button type="button" id="calcBtn">Рассчитать стоимость</button>
     <button type="button" id="resetBtn">Сбросить выбор</button>
   </form>
-
-  <script>
-document.addEventListener("DOMContentLoaded", () => {
-
-
-  window.openModal = (src) => {
-    const modal = document.getElementById("imageModal");
-    const modalImage = document.getElementById("modalImage");
-    modalImage.src = src;
-    modal.style.display = "flex";
-  };
-  window.closeModal = () => {
-    document.getElementById("imageModal").style.display = "none";
-  };
-
 
   <h3>Итоговая сумма: <span id="total">0</span> $</h3>
 
