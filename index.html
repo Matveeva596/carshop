@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выбор автомобилей</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      color: #222;
+      text-align: center;
+      padding: 20px;
+    }
+
+    form {
+      background: #fff;
+      display: inline-block;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    button {
+      margin: 10px 5px;
+      padding: 10px 20px;
+      background: #007bff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Выбор автомобилей</h1>
+
+  <img src="https://ts4.mm.bing.net/th?id=OIP.y8COhHXdBGBYxD6BOqVmugHaFj&pid=15.1"
+       alt="Логотипы автомобилей" width="400">
+
+  <h2>Выберите автомобили:</h2>
+
+  <form id="carForm">
+    <label><input type="checkbox" name="car" value="10000" data-name="Toyota"> Toyota – 10 000 $</label><br>
+    <label><input type="checkbox" name="car" value="15000" data-name="BMW"> BMW – 15 000 $</label><br>
+    <label><input type="checkbox" name="car" value="12000" data-name="Ford"> Ford – 12 000 $</label><br>
+    <label><input type="checkbox" name="car" value="8000" data-name="Kia"> Kia – 8 000 $</label><br>
+    <label><input type="checkbox" name="car" value="20000" data-name="Mercedes"> Mercedes – 20 000 $</label><br><br>
+
+    <button type="button" id="calcBtn">Рассчитать стоимость</button>
+    <button type="button" id="resetBtn">Сбросить выбор</button>
+  </form>
+
+  <h3>Итоговая сумма: <span id="total">0</span> $</h3>
+
+  <h3>Вы выбрали:</h3>
+  <ul id="selectedList">
+    <li>Нет выбранных автомобилей</li>
+  </ul>
+
+  <script src="car.js"></script>
+</body>
+</html>
